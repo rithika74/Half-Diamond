@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let n = parseInt(prompt("enter no of rows"))
+        document.write("Rows = " + n + "<br>")
+        for (let i = 1; i < n; i += 2) {
+            for (let j = 0; j < i; j++) {
+                if (i == 0 || j == 0 || j == i - 1) {
+                    document.write("* ")
+                }
+                else {
+                    // document.write(j + " ")
+                    // // let l=1;
+                    while (j==j/2) {
+                        if (j==1 || j==i-2) {
+                            document.write(j+" ")
+                            
+                        }
+                        
+                    }
+                }
+            }
+            document.write("<br>")
+        }
+        for (let i = n ; i >= 1; i=i-2) {
+            for (let k = 0; k < i; k++) {
+                if (i == 1 || k == 0 || k == i - 1) {
+                    document.write("* ")
+                }
+                else {
+                    document.write(k + " ")
+                }
+            }
+            document.write("<br>")
+        }
+    </script>
+</body>
+
+</html>
